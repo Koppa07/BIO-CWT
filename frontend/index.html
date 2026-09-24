@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="shortcut icon" href="images/logo.svg" type="image/x-icon" />
+    <title>BIO CWT</title>
+    <script src="js/main.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Italiana&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <nav class="header__nav">
+          <div class="header__brand-logo">
+            <a href="">
+              <img
+                src="images/logo.svg"
+                class="header__brand-logo"
+                alt="brand-logo"
+              />
+            </a>
+          </div>
+          <ul class="header__list">
+            <li>
+              <a class="header__list-item" href="">Gallery</a>
+            </li>
+            <li>
+              <a class="header__list-item" href="">Prices for services</a>
+            </li>
+            <li>
+              <a class="header__list-item" href="">About us</a>
+            </li>
+            <li>
+              <a class="header__list-item" href="">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="main">
+        <div class="order">
+          <div class="order__info">
+            <h1>SOLID WOOD PRODUCTS</h1>
+            <p>Oak, beech, ash from 1700 CZK per m3</p>
+            <a class="order__btn" href="" id="order__btn">Order</a>
+          </div>
+          <div class="order__line">
+            <img src="images/line.png" alt="" />
+          </div>
+          <div class="order__photos">
+            <div class="order__photo__upper">
+              <img src="images/process.jpg" alt="order__photo-process" />
+            </div>
+            <div class="order__photo__center">
+              <img src="images/staircase.jpg" alt="order__photo-staircase" />
+            </div>
+            <div class="order__photo__lower">
+              <img src="images/furniture.jpg" alt="order__photo-furniture" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="materials">
+        <h2>THE WOOD WE WORK WITH</h2>
+        <div class="materials__columns" id="materials-container"></div>
+      </section>
+      <section class="results">
+        <h2>OUR WORK</h2>
+
+        <div class="results__main">
+          <div class="results__arrow arrow__left">
+            <button type="button" id="projects-prev">
+              <img src="images/arrow_right.svg" alt="Previous project" />
+            </button>
+          </div>
+
+          <div class="results__photo" id="project-container"></div>
+
+          <div class="results__arrow">
+            <button type="button" id="projects-next">
+              <img src="images/arrow_right.svg" alt="Next project" />
+            </button>
+          </div>
+        </div>
+
+        <div class="results__dots" id="projects-dots"></div>
+      </section>
+      <section class="advantages">
+        <h2>ADVANTAGES WORKING WITH US</h2>
+        <div class="advantages__video-info">
+          <div class="advantages__video">
+            <video
+              src="images/advantages_video.mp4"
+              controls
+              preload="metadata"
+              poster="images/advantages_video-poster.jpg"
+            ></video>
+          </div>
+          <div class="advantages__info">
+            <p>In-house carpentry production</p>
+            <p>
+              We only treat wood with environmentally friendly and safe products
+            </p>
+            <p>Prices from the manufacturer, no extra charges</p>
+          </div>
+        </div>
+        <a class="order__btn advantages__btn" href="">Receive a consultation</a>
+      </section>
+      <section class="about-us">
+        <div class="about-us__info">
+          <h2>ABOUT US</h2>
+          <p>
+            BIO CWT - We manufacture solid wood products according to individual
+            drawings. We make chairs, armchairs, wardrobes, beds and much more
+            in our own workshop, equipped with all the necessary industrial
+            equipment.
+          </p>
+        </div>
+        <div class="about-us__photos">
+          <div class="about-us__photos__centre">
+            <img src="images/about_us_centre.jpg" alt="" />
+          </div>
+          <div class="about-us__photos__upper">
+            <img src="images/about_us_upper.jpg" alt="" />
+          </div>
+          <div class="about-us__photos__lower">
+            <img src="images/about_us_lower.jpg" alt="" />
+          </div>
+        </div>
+      </section>
+      <section class="questions">
+        <h2>ANY QUESTIONS?</h2>
+        <div class="questions__main">
+          <form>
+            <div class="questions__contact">
+              <div class="questions__contact__info">
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Your name"
+                  required
+                />
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="Your telephone number"
+                  required
+                />
+                <textarea
+                  id="question"
+                  name="question"
+                  placeholder="Your question"
+                  required
+                ></textarea>
+              </div>
+              <div class="questions__contact__btn">
+                <button type="submit" class="order__btn">Send</button>
+              </div>
+            </div>
+          </form>
+          <div class="questions__p_photo">
+            <p class="question__p">
+              Write to us and we will be sure to answer all your questions and
+              give you a comprehensive consultation.
+            </p>
+            <div class="questions__photo">
+              <img src="images/wood.png" alt="photo-wood" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer__logo-p">
+        <div class="footer-logo">
+          <img src="images/logo.svg" alt="brand-logo" />
+        </div>
+        <p class="footer__privacy">Privacy Policy</p>
+      </div>
+
+      <div class="footer__phone">
+        <div class="footer__phone-icon">
+          <img src="images/phone-icon.png" alt="phone-icon" />
+        </div>
+        <div class="footer__phone-text">
+          <p>+420 000 000 000</p>
+        </div>
+      </div>
+      <div class="footer__address">
+        <div class="footer__address-icon">
+          <img src="images/address-icon.png" alt="address-icon" />
+        </div>
+        <div class="footer__address-text">
+          <p>Na Plzeňce 1166/0 150 00</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

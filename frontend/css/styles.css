@@ -147,16 +147,11 @@ header {
 
   display: flex;
   justify-content: space-between;
+  overflow: hidden;
 
   background: var(--neutral-900);
   border-radius: 43px 0 0 43px;
   filter: drop-shadow(0 4px 52px rgba(245, 245, 245, 0.17));
-}
-
-.order {
-  display: flex;
-  justify-content: space-between;
-  overflow: hidden;
 }
 
 .order h1 {

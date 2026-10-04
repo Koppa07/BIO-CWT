@@ -46,77 +46,88 @@
     </header>
     <main>
       <section class="main">
-        <div class="order">
-          <div class="order__info">
-            <h1>SOLID WOOD PRODUCTS</h1>
-            <p>Oak, beech, ash from 1700 CZK per m3</p>
-            <a class="order__btn" href="" id="order__btn">Order</a>
-          </div>
-          <div class="order__line">
-            <img src="images/line.png" alt="" />
-          </div>
-          <div class="order__photos">
-            <div class="order__photo__upper">
-              <img src="images/process.jpg" alt="order__photo-process" />
+        <div class="section__container">
+          <div class="order__container">
+            <div class="order__info">
+              <h1>solid wood products</h1>
+              <p>Oak, beech, ash from 1700 CZK per m3</p>
+              <a class="order__btn" href="" id="order__btn">Order</a>
             </div>
-            <div class="order__photo__center">
-              <img src="images/staircase.jpg" alt="order__photo-staircase" />
+            <div class="order__line">
+              <img src="images/line.png" alt="" />
             </div>
-            <div class="order__photo__lower">
-              <img src="images/furniture.jpg" alt="order__photo-furniture" />
+            <div class="order__photos">
+              <div class="order__photo__upper">
+                <img src="images/process.jpg" alt="order__photo-process" />
+              </div>
+              <div class="order__photo__center">
+                <img src="images/staircase.jpg" alt="order__photo-staircase" />
+              </div>
+              <div class="order__photo__lower">
+                <img src="images/furniture.jpg" alt="order__photo-furniture" />
+              </div>
             </div>
           </div>
         </div>
       </section>
       <section class="materials">
-        <h2>THE WOOD WE WORK WITH</h2>
-        <div class="materials__columns" id="materials-container"></div>
+        <div class="section__container">
+          <h2>the wood we work with</h2>
+          <div class="materials__columns" id="materials-container"></div>
+        </div>
       </section>
       <section class="results">
-        <h2>OUR WORK</h2>
+        <div class="section__container">
+          <h2>our work</h2>
 
-        <div class="results__main">
-          <div class="results__arrow arrow__left">
-            <button type="button" id="projects-prev">
-              <img src="images/arrow_right.svg" alt="Previous project" />
-            </button>
+          <div class="results__main">
+            <div class="results__arrow arrow__left">
+              <button type="button" id="projects-prev">
+                <img src="images/arrow_right.svg" alt="Previous project" />
+              </button>
+            </div>
+
+            <div class="results__photo" id="project-container"></div>
+
+            <div class="results__arrow">
+              <button type="button" id="projects-next">
+                <img src="images/arrow_right.svg" alt="Next project" />
+              </button>
+            </div>
           </div>
 
-          <div class="results__photo" id="project-container"></div>
-
-          <div class="results__arrow">
-            <button type="button" id="projects-next">
-              <img src="images/arrow_right.svg" alt="Next project" />
-            </button>
-          </div>
+          <div class="results__dots" id="projects-dots"></div>
         </div>
-
-        <div class="results__dots" id="projects-dots"></div>
       </section>
       <section class="advantages">
-        <h2>ADVANTAGES WORKING WITH US</h2>
-        <div class="advantages__video-info">
-          <div class="advantages__video">
-            <video
-              src="images/advantages_video.mp4"
-              controls
-              preload="metadata"
-              poster="images/advantages_video-poster.jpg"
-            ></video>
+        <div class="section__container">
+          <h2>advantages working with us</h2>
+          <div class="advantages__video-info">
+            <div class="advantages__video">
+              <video
+                src="images/advantages_video.mp4"
+                controls
+                preload="metadata"
+                poster="images/advantages_video-poster.jpg"
+              ></video>
+            </div>
+            <div class="advantages__info">
+              <p>In-house carpentry production</p>
+              <p>
+                We only treat wood with environmentally friendly and safe
+                products
+              </p>
+              <p>Prices from the manufacturer, no extra charges</p>
+            </div>
           </div>
-          <div class="advantages__info">
-            <p>In-house carpentry production</p>
-            <p>
-              We only treat wood with environmentally friendly and safe products
-            </p>
-            <p>Prices from the manufacturer, no extra charges</p>
-          </div>
+          <a class="order__btn advantages__btn" href=""
+            >Receive a consultation</a
+          >
         </div>
-        <a class="order__btn advantages__btn" href="">Receive a consultation</a>
       </section>
-      <section class="about-us">
+      <section class="about-us section__container">
         <div class="about-us__info">
-          <h2>ABOUT US</h2>
+          <h2>about us</h2>
           <p>
             BIO CWT - We manufacture solid wood products according to individual
             drawings. We make chairs, armchairs, wardrobes, beds and much more
@@ -137,44 +148,46 @@
         </div>
       </section>
       <section class="questions">
-        <h2>ANY QUESTIONS?</h2>
-        <div class="questions__main">
-          <form>
-            <div class="questions__contact">
-              <div class="questions__contact__info">
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  placeholder="Your name"
-                  required
-                />
-                <input
-                  type="tel"
-                  id="phone"
-                  name="phone"
-                  placeholder="Your telephone number"
-                  required
-                />
-                <textarea
-                  id="question"
-                  name="question"
-                  placeholder="Your question"
-                  required
-                ></textarea>
+        <div class="section__container">
+          <h2>any questios?</h2>
+          <div class="questions__main">
+            <form>
+              <div class="questions__contact">
+                <div class="questions__contact__info">
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Your name"
+                    required
+                  />
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="Your telephone number"
+                    required
+                  />
+                  <textarea
+                    id="question"
+                    name="question"
+                    placeholder="Your question"
+                    required
+                  ></textarea>
+                </div>
+                <div class="questions__contact__btn">
+                  <button type="submit" class="order__btn">Send</button>
+                </div>
               </div>
-              <div class="questions__contact__btn">
-                <button type="submit" class="order__btn">Send</button>
+            </form>
+            <div class="questions__p_photo">
+              <p class="question__p">
+                Write to us and we will be sure to answer all your questions and
+                give you a comprehensive consultation.
+              </p>
+              <div class="questions__photo">
+                <img src="images/wood.png" alt="photo-wood" />
               </div>
-            </div>
-          </form>
-          <div class="questions__p_photo">
-            <p class="question__p">
-              Write to us and we will be sure to answer all your questions and
-              give you a comprehensive consultation.
-            </p>
-            <div class="questions__photo">
-              <img src="images/wood.png" alt="photo-wood" />
             </div>
           </div>
         </div>

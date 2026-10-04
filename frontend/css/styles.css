@@ -97,6 +97,7 @@ footer {
 .section__container {
   min-width: 0;
 }
+
 main {
   flex: 1;
 }
@@ -166,7 +167,7 @@ header {
 
 .order__container h1 {
   margin: 75px 0 22px 50px;
-  width: 542px;
+  width: 500px;
 }
 
 .order__btn {
@@ -405,7 +406,7 @@ header {
   width: 1325px;
   height: 775px;
 
-  margin: 294px auto 192px;
+  margin: 294px 0 192px;
 
   display: flex;
   gap: 32px;
@@ -622,7 +623,6 @@ header {
   max-width: 546px;
   margin: 0 0 0 auto;
   text-align: right;
-  overflow-wrap: anywhere;
 }
 .questions__photo {
   width: 100%;
@@ -656,7 +656,7 @@ footer {
   height: 301px;
 
   margin: 0 auto -220px;
-  padding: 30px max(102px, calc((100% - 1440px) / 2 + 102px));
+  padding: 30px 102px;
 
   display: flex;
   flex-direction: row;
@@ -702,7 +702,7 @@ footer {
 }
 
 p {
-  overflow-wrap: break-word;
+  overflow-wrap: anywhere;
 }
 
 h1,
@@ -711,7 +711,7 @@ h2 {
   font-size: clamp(42px, 6.25vw, 90px);
   font-weight: 500;
   line-height: 1.15;
-  overflow-wrap: break-word;
+  overflow-wrap: anywhere;
   text-transform: uppercase;
 }
 
@@ -789,7 +789,7 @@ h2 {
   .results__photo {
     width: min(900px, 75vw);
     height: auto;
-    aspect-ratio: 1.5 / 1;
+    aspect-ratio: 1.5;
   }
 
   .advantages__video-info {
@@ -957,7 +957,6 @@ h2 {
     max-width: 546px;
     margin: 0 0 0 auto;
     text-align: right;
-    overflow-wrap: anywhere;
   }
 
   .questions__photo {
@@ -1362,7 +1361,6 @@ h2 {
     max-width: 100%;
     max-height: none;
     width: min(260px, 70vw);
-    aspect-ratio: 1;
     border-radius: 55px;
   }
 
@@ -1415,7 +1413,6 @@ h2 {
     top: 150px;
   }
 
-  /* QUESTIONS: mobile */
   .questions {
     width: 100%;
     max-width: 1440px;
@@ -1534,7 +1531,6 @@ h2 {
     max-width: 100%;
     width: auto;
     font-size: clamp(30px, 10vw, 44px);
-    overflow-wrap: anywhere;
   }
 
   .header::before {
@@ -1806,11 +1802,4 @@ h2 {
   .footer__privacy {
     font-size: 14px;
   }
-}
-
-html,
-body {
-  width: 100%;
-  max-width: 100%;
-  overflow-x: clip;
 }

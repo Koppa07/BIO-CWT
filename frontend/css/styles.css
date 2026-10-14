@@ -83,19 +83,12 @@ body::before {
   z-index: -1;
 }
 
-.header__container,
-.section__container,
+.container,
 main,
 footer {
   width: 100%;
-  margin-inline: auto;
-}
-.header__container,
-.section__container {
-  max-width: 1440px;
-}
-.section__container {
   min-width: 0;
+  margin-inline: auto;
 }
 
 main {

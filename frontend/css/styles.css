@@ -122,7 +122,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  flex-direction: row;
 }
 
 .header__brand-logo {
@@ -159,8 +158,12 @@ header {
 }
 
 .order__container h1 {
-  margin: 75px 0 22px 50px;
+  margin: 75px 0 22px 0;
   width: 500px;
+}
+
+.order__info {
+  margin-left: 50px;
 }
 
 .order__btn {
@@ -182,7 +185,7 @@ header {
 #order__btn {
   width: 225px;
   height: 58px;
-  margin: 0 0 102px 50px;
+  margin: 0 0 102px 0;
 }
 
 .order__container p {
@@ -190,7 +193,7 @@ header {
   line-height: 130%;
   color: var(--orange-200);
   width: 303px;
-  margin: 0 0 58px 62px;
+  margin: 0 0 58px 0;
 }
 
 .order__line {
